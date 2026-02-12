@@ -16,7 +16,7 @@ public static void main(String[] args){
         p1.mostrarResumen();
 
         System.out.println("=== PRUEBA DE ESTADOS ===");
-        p1.setEstado(EstadoPedido.LISTO_PARA_ENTREGAR);
+        p1.setEstado(EstadoPedido.PEDIDO_ENVIADO);
         System.out.println("Estado actualizado a: " + p1.getEstado());
         p1.setEstado(EstadoPedido.PEDIDO_ENTREGADO);
         System.out.println("Estado actual: " + p1.getEstado());
