@@ -1,4 +1,4 @@
-package Preset;
+package model;
 
 public class Articulo {
     private String nombre;

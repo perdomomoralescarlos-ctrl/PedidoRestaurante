@@ -1,3 +1,7 @@
+import Preset.EstadoPedido;
+import model.Pedido;
+import model.Articulo;
+
 public static void main(String[] args){
     System.out.println("=== SISTEMA DE GESTIÓN DE PEDIDOS ===");
 
@@ -14,9 +18,9 @@ public static void main(String[] args){
         System.out.println("=== PRUEBA DE ESTADOS ===");
         p1.setEstado(EstadoPedido.LISTO_PARA_ENTREGAR);
         System.out.println("Estado actualizado a: " + p1.getEstado());
-        p1.setEstado(EstadoPedido.ENTREGADO);
+        p1.setEstado(EstadoPedido.PEDIDO_ENTREGADO);
         System.out.println("Estado actual: " + p1.getEstado());
-        p1.setEstado(EstadoPedido.EN_PREPARACION);
+        p1.setEstado(EstadoPedido.PEDIDO_EN_PREPARACION);
         System.out.println("\n=== SEGUNDO PEDIDO ===");
 
         Pedido p2 = new Pedido("Agustina");
